@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 import MyComp2 from './components/MyComp2';
 import MyComp3 from './components/MyComp3';
 import MyComp4 from './components/MyComp4';
+import MyComp5 from './components/MyComp5';
 
 const handleClick = e => {
   console.log(e);
@@ -20,6 +21,8 @@ render(
     <MyComp3 value={0}/>
     <hr />
     <MyComp4 />
+    <hr />
+    <MyComp5 />
   </div>,
   document.querySelector('#main')
 );
