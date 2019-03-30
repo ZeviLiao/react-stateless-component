@@ -1,7 +1,7 @@
 import React from "react"
 import { withStateHandlers } from "recompose"
 
-const enhance = withStateHandlers(
+const MyComp5 = withStateHandlers(
   ({ initialCounter = 0 }) => ({
     counter: initialCounter
   }),
@@ -16,9 +16,7 @@ const enhance = withStateHandlers(
       counter: initialCounter
     })
   }
-)
-
-const MyComp5 = ({ counter, incrementOn, decrementOn, resetCounter }) => {
+)(({ counter, incrementOn, decrementOn, resetCounter }) => {
   return (
     <div>
       <div>{counter}</div>
@@ -28,6 +26,6 @@ const MyComp5 = ({ counter, incrementOn, decrementOn, resetCounter }) => {
       <button onClick={resetCounter}>Reset</button>
     </div>
   )
-}
+})
 
-export default enhance(MyComp5)
+export default MyComp5
