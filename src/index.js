@@ -1,11 +1,5 @@
-import React from 'react'
-import { render } from 'react-dom'
-import Comp1 from './components/Comp1'
+import React from "react"
+import { render } from "react-dom"
+import Comp2 from "./components/Comp2"
 
-render(
-  <div>
-    <Comp1 />
-    <input type="text"/>
-  </div>,
-  document.querySelector('#main')
-)
+render(<Comp2 />, document.querySelector("#main"))
