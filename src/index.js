@@ -1,9 +1,11 @@
-import React from 'react';
-import { render } from 'react-dom';
-import Hello from './components/Hello';
-
+import React from 'react'
+import { render } from 'react-dom'
+import Comp1 from './components/Comp1'
 
 render(
-  <Hello/>,
+  <div>
+    <Comp1 />
+    <input type="text"/>
+  </div>,
   document.querySelector('#main')
-);
+)
