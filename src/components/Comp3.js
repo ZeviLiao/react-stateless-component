@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react"
 
-const Comp3 = () => {
+const Comp3 = props => {
+  const handleChange = e => {
+    console.log(e.currentTarget.value)
+  }
   return (
     <div>
-      <div className="fish-edit">
-        <h1>Hello</h1>
-      </div>
+      <input type="text" onChange={handleChange} value="abc" />
     </div>
   )
 }
